@@ -4,4 +4,6 @@ var UserSchema = new mongoose.Schema({ //定义一个Schema
     age: Number,
     sex: String
 });
-mongoose.model('User', UserSchema,'test',false);//将该Schema发布为Model
+var UserModel = mongoose.model('User', UserSchema, 'test', false);//将该Schema发布为Model
+
+module.exports = UserModel;

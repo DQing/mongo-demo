@@ -6,9 +6,8 @@
 * 5.使用find方法将数据库中的数据读取并显示在控制台
 * */
 var mongoose = require('mongoose');
-require('./../demo1/connect');
-require('./schema.js');
-var User = mongoose.model('User');//Book为model name
+require('./connect');
+var User = require('./schema.js');
 mongoose.Promise = global.Promise;
 
 var user = new User({
